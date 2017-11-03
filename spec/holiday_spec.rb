@@ -65,7 +65,7 @@ describe "holiday_supplies_hash" do
       columbus_day_supplies = ["Flags", "Parade Floats", "Italian Food"]
 
       add_new_holiday_with_supplies(holiday_supplies, :fall, :columbus_day, columbus_day_supplies)
-
+      
       expect(holiday_supplies[:fall].keys).to include(:columbus_day)
       expect(holiday_supplies[:fall][:columbus_day]).to match_array(columbus_day_supplies)
 
